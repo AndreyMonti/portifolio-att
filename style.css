@@ -576,20 +576,20 @@ section {
     }
 }
 
-/* Acessibilidade - Foco visível */
+/* Acessibilidade*/
 button:focus,
 a:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
 
-/* Animações suaves para elementos que aparecem na rolagem */
 .fade-in {
-    opacity: 1; /* Elementos começam visíveis */
-    transform: translateY(0); /* Posição normal */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+
 }
