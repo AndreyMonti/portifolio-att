@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fadeElements.forEach(element => {
         fadeInObserver.observe(element);
     });
-    
-    // Adicionar classe fade-in para elementos que devem aparecer na rolagem
+
     const sections = document.querySelectorAll('section');
     const projectCards = document.querySelectorAll('.project-card');
     const skillTags = document.querySelectorAll('.skill-tag');
@@ -55,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         tag.classList.add('fade-in');
     });
     
-    // Efeito de mudança de cor na navbar ao rolar
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', () => {
@@ -68,10 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Adicionar ano atual no footer
     const yearElement = document.querySelector('footer p:first-child');
     if (yearElement) {
         const currentYear = new Date().getFullYear();
         yearElement.textContent = yearElement.textContent.replace('2024', currentYear);
     }
+
 });
